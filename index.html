@@ -43,7 +43,7 @@
             margin-bottom: 20px;
         }
         header .logo-container img {
-            max-width: 200px; /* Ajusta el tamaño del logo */
+            max-width: 300px; /* Aumenté el tamaño del logo */
         }
         section {
             padding: 80px 20px;
@@ -64,8 +64,7 @@
             color: #28a745;
         }
         .service-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            display: block; /* Cambié esto para que se muestren en una columna */
             gap: 30px;
             justify-items: center;
         }
@@ -75,6 +74,7 @@
             border-radius: 10px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
         }
         .service-card:hover {
             transform: translateY(-10px);
@@ -181,5 +181,6 @@
     </footer>
 </body>
 </html>
+
 
 
