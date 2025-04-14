@@ -26,11 +26,14 @@
             text-align: center;
             position: relative;
             box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px; /* Ajusta el espacio entre el header y el contenido */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-direction: row;
         }
         header h1 {
-            font-size: 4rem;
-            margin: 20px 0; /* Ajustado para mayor separación con el logo */
+            font-size: 3.5rem;
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -40,12 +43,23 @@
             margin-bottom: 20px;
             font-weight: 400;
         }
-        header .logo-container {
-            margin-bottom: 20px;
-        }
         header .logo-container img {
-            max-width: 200px; /* Reduje el tamaño del logo */
-            width: 100%;
+            max-width: 150px; /* Reduje el tamaño del logo */
+            height: auto;
+        }
+        header .btn-contact {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 20px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        header .btn-contact:hover {
+            background-color: #218838;
         }
         section {
             padding: 80px 20px;
@@ -138,8 +152,11 @@
         <div class="logo-container">
             <img src="logo.png" alt="ÑañoTech Logo">
         </div>
-        <h1>ÑañoTech</h1>
-        <p>Seguridad Digital Profesional para tu tranquilidad</p>
+        <div>
+            <h1>ÑañoTech</h1>
+            <p>Seguridad Digital Profesional para tu tranquilidad</p>
+        </div>
+        <a href="https://wa.me/593995750360" class="btn-contact">Contáctame en WhatsApp</a>
     </header>
 
     <section>
