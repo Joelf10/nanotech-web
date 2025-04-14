@@ -39,19 +39,11 @@
             margin-bottom: 20px;
             font-weight: 400;
         }
-        header .btn-contact {
-            display: inline-block;
-            background-color: #28a745;
-            color: white;
-            padding: 20px 40px;
-            border-radius: 50px;
-            font-size: 1.2rem;
-            font-weight: 500;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
+        header .logo-container {
+            margin-bottom: 20px;
         }
-        header .btn-contact:hover {
-            background-color: #218838;
+        header .logo-container img {
+            max-width: 200px; /* Ajusta el tamaño del logo */
         }
         section {
             padding: 80px 20px;
@@ -114,13 +106,13 @@
             font-size: 1.4rem;
             color: white;
             padding: 15px 30px;
-            background-color: #007bff;
+            background-color: #28a745; /* Color verde para el botón */
             border-radius: 50px;
             text-decoration: none;
             transition: background-color 0.3s ease;
         }
         .contact a:hover {
-            background-color: #0056b3;
+            background-color: #218838;
         }
         footer {
             background-color: #333;
@@ -140,9 +132,11 @@
 </head>
 <body>
     <header>
+        <div class="logo-container">
+            <img src="https://joelf10.github.io/nanotech-web/A_logo_for_%22ÑañoTech%22_is_displayed_in_a_flat_digit.png" alt="ÑañoTech Logo">
+        </div>
         <h1>ÑañoTech</h1>
         <p>Seguridad Digital Profesional para tu tranquilidad</p>
-        <a href="https://wa.me/593995750360" class="btn-contact">Contáctame en WhatsApp</a>
     </header>
 
     <section>
@@ -187,4 +181,5 @@
     </footer>
 </body>
 </html>
+
 
