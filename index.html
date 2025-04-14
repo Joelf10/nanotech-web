@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ÑañoTech</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>ÑañoTech - Seguridad Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,100 +12,109 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Roboto', sans-serif;
-            background: #f5f5f5;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f5f5f5;
             color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
         header {
-            background: #333;
+            background: #1a1a1a;
             color: #fff;
-            padding: 80px 20px;
+            padding: 100px 20px;
             text-align: center;
             position: relative;
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
         }
         header h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
+            font-size: 4rem;
+            margin-bottom: 10px;
             font-weight: 700;
             letter-spacing: 2px;
+            text-transform: uppercase;
         }
         header p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
             font-weight: 400;
-            margin-bottom: 30px;
         }
-        header::after {
-            content: "";
-            background: url('https://www.transparenttextures.com/patterns/diagonal-stripes-light.png');
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: -1;
-            opacity: 0.05;
-        }
-        .btn-contact {
+        header .btn-contact {
             display: inline-block;
             background-color: #28a745;
             color: white;
-            padding: 15px 30px;
+            padding: 20px 40px;
             border-radius: 50px;
-            text-decoration: none;
             font-size: 1.2rem;
             font-weight: 500;
-            transition: background-color 0.3s;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
         }
-        .btn-contact:hover {
+        header .btn-contact:hover {
             background-color: #218838;
         }
+        section {
+            padding: 80px 20px;
+            margin: 40px 0;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        }
         .container {
-            width: 90%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 50px 0;
-        }
-        .services, .about, .contact {
-            padding: 50px 0;
             text-align: center;
-            background-color: #fff;
-            margin: 30px 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
         h2 {
             font-size: 2.5rem;
-            font-weight: 500;
+            font-weight: 600;
             margin-bottom: 40px;
             color: #28a745;
         }
-        .services .service-card {
-            background: #f1f1f1;
+        .service-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            justify-items: center;
+        }
+        .service-card {
+            background-color: #f1f1f1;
             padding: 30px;
-            border-radius: 8px;
-            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .services .service-card:hover {
+        .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 20px 30px rgba(0,0,0,0.15);
         }
         .service-card h3 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 600;
             color: #333;
+            margin-bottom: 15px;
         }
         .service-card p {
             font-size: 1.2rem;
-            margin-top: 10px;
             color: #777;
+        }
+        .contact {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 80px 20px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .contact h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 40px;
         }
         .contact a {
             font-size: 1.4rem;
-            margin-top: 30px;
-            padding: 15px 40px;
-            background-color: #007bff;
             color: white;
+            padding: 15px 30px;
+            background-color: #007bff;
             border-radius: 50px;
             text-decoration: none;
             transition: background-color 0.3s ease;
@@ -116,7 +125,7 @@
         footer {
             background-color: #333;
             color: white;
-            padding: 30px 0;
+            padding: 20px;
             text-align: center;
             font-size: 1rem;
         }
@@ -132,50 +141,49 @@
 <body>
     <header>
         <h1>ÑañoTech</h1>
-        <p>Tu pana tech de confianza, pa' que nadie te hackee.</p>
+        <p>Seguridad Digital Profesional para tu tranquilidad</p>
         <a href="https://wa.me/593995750360" class="btn-contact">Contáctame en WhatsApp</a>
     </header>
 
-    <div class="container">
-        <section class="services">
+    <section>
+        <div class="container">
             <h2>Servicios</h2>
-            <div class="service-card">
-                <h3>Diagnóstico de seguridad</h3>
-                <p>Identifica posibles amenazas en tu red y dispositivos.</p>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Diagnóstico de Seguridad</h3>
+                    <p>Identificación de amenazas y vulnerabilidades en tus dispositivos.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Limpieza de Virus</h3>
+                    <p>Eliminación de software malicioso para proteger tu información.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Seguridad en Redes Sociales</h3>
+                    <p>Protección de cuentas y prevención de hackeos.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Respaldo en la Nube</h3>
+                    <p>Copia de seguridad de archivos importantes para tu negocio o vida personal.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Consultoría en Seguridad para Negocios</h3>
+                    <p>Soluciones personalizadas para proteger tu empresa de ciberamenazas.</p>
+                </div>
             </div>
-            <div class="service-card">
-                <h3>Limpieza de virus</h3>
-                <p>Elimina malware, spyware y otros programas maliciosos.</p>
-            </div>
-            <div class="service-card">
-                <h3>Seguridad en redes sociales</h3>
-                <p>Protege tu cuenta de accesos no autorizados y hackeos.</p>
-            </div>
-            <div class="service-card">
-                <h3>Respaldo en la nube</h3>
-                <p>Te ayudo a mantener tus datos seguros y accesibles en todo momento.</p>
-            </div>
-            <div class="service-card">
-                <h3>Paquete mensual para negocios</h3>
-                <p>Soluciones de seguridad para tu empresa, todo en un solo paquete.</p>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="about">
-            <h2>¿Quién soy?</h2>
-            <p>Soy un ingeniero en sistemas guayaco, apasionado por la tecnología y la seguridad digital. Mi misión es ayudarte a ti o a tu negocio a protegerse y trabajar de forma más segura y eficiente.</p>
-        </section>
-
-        <section class="contact">
+    <section class="contact">
+        <div class="container">
             <h2>Contacto</h2>
-            <p>¿Necesitas ayuda inmediata? ¡No dudes en escribirme por WhatsApp!</p>
-            <a href="https://wa.me/593995750360" class="btn-contact">Contáctame por WhatsApp</a>
-        </section>
-    </div>
+            <p>¿Tienes alguna duda o necesitas ayuda inmediata? ¡Contáctame por WhatsApp y te atenderé lo más rápido posible!</p>
+            <a href="https://wa.me/593995750360" class="btn-contact">Escríbeme en WhatsApp</a>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2025 ÑañoTech | Todos los derechos reservados</p>
-        <p>Desarrollado con ❤️ por <a href="https://www.github.com/tu_usuario" target="_blank">TuNombre</a></p>
+        <p>Desarrollado por <a href="https://github.com/tu_usuario" target="_blank">TuNombre</a></p>
     </footer>
 </body>
 </html>
